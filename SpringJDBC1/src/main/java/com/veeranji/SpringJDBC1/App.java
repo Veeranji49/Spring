@@ -17,5 +17,6 @@ public class App
     	
     	Employee emp=new Employee(11,"purnima",12);
     	employeeBusiness.insertEmployee(emp);
+    	System.out.println("Successfully Inserted");
     }
 }
