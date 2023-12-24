@@ -1,0 +1,14 @@
+package com.Constructor2;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class INOUTMainf {
+	public static void main(String[] args)
+	{
+		ApplicationContext context=new ClassPathXmlApplicationContext("InOut.xml");
+		Input input=(Input)context.getBean("input");
+		input.details();	
+	}
+
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="gamesbean" class="com.SetterInjection.Games">
+		<property name="players" value="11"></property>
+		<property name="gamename" value="Football"></property>
+		<property name="gamefee" value="250000.00"></property>
+	</bean>
+	<bean id="sportsbean" class="com.SetterInjection.Sports">
+		<property name="name" value="Wrestling"></property>
+		<property name="sports" value="50"></property>
+		<property name="games" ref="gamesbean"></property>
+	</bean>
+	</beans>

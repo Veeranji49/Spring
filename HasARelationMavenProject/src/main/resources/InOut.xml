@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+     <bean id="output" class="com.Constructor2.Output">
+     	<constructor-arg value="Hyderabad"/>
+     	<constructor-arg value="25000"/>
+     </bean>
+	<bean id="input" class="com.Constructor2.Input">
+		<constructor-arg value="101"/>
+		<constructor-arg value="Anji"/>
+		<constructor-arg ref="output"/>
+	</bean>
+	</beans>
