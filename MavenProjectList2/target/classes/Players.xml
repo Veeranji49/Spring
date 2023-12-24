@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+       <bean id="player-1:" class="com.bean1.Player">
+       	<constructor-arg value="7"/>
+       	<constructor-arg value="Cristiano Ronaldo"/>
+       	<constructor-arg value="25000000"/>
+       	<constructor-arg value="Porjugal"/>
+       </bean>
+       
+       <bean id="player-2:" class="com.bean1.Player">
+       	<constructor-arg  value="10"/>
+       	<constructor-arg  value="Leonel Messi"/>
+       	<constructor-arg  value="20000000"/>
+       	<constructor-arg  value="Argentina"/>
+       </bean>
+       
+       <bean id="player-3:" class="com.bean1.Player">
+       	<constructor-arg  value="18"/>
+       	<constructor-arg  value="virat Kohli"/>
+       	<constructor-arg  value="10000000"/>
+       	<constructor-arg  value="India"/>
+       </bean>
+       
+       <bean id="playerList" class="java.util.ArrayList">
+      		<constructor-arg>
+      			<list>
+      				<ref  bean="player-1:"/>
+      				<ref bean="player-2:"/>
+      				<ref bean="player-3:"/>
+      			</list>
+      		</constructor-arg>
+       </bean>
+       </beans>
+       
+

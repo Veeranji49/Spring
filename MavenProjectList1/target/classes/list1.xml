@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="product1" class="com.bean.Product">
+		<constructor-arg value="Oil"/>
+	</bean>
+	<bean id="product2" class="com.bean.Product">
+		<constructor-arg value="chips"/>
+	</bean>
+	<bean id="product3" class="com.bean.Product">
+		<constructor-arg value="fruits"/>
+	</bean>
+	
+	<bean id="productList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="product1"/>
+				<ref bean="product2"/>
+				<ref bean="product3"/>
+			</list>
+		</constructor-arg>
+	</bean>
+	</beans>

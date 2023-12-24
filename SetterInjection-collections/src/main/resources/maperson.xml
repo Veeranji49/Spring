@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 	<bean id="personbean" class="com.spring.MapPerson">
+ 		<property name="name">
+ 			<map>
+ 				<entry key="name1" value="anji"/>
+ 				<entry key="name2" value="veeru"/>
+ 			</map>
+ 		</property>
+ 		<property name="contact">
+ 			<map>
+ 				<entry key="contact1" value="630291"/>
+ 				<entry key="contact2" value="965247"/>
+ 			</map>
+ 		</property>
+ 		<property name="salary">
+ 		
+ 			<map>
+ 				<entry key="salary1" value="30000"/>
+ 				<entry key="salary2" value="35000"/>
+ 			</map>
+ 		</property>
+ 	</bean>
+ 
+ 
+ </beans>

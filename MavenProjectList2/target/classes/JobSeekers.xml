@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>	
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="Seeker1" class="com.bean2.JobSeeker">
+		<constructor-arg value="1"/>
+		<constructor-arg value="software Engineer"/>
+		<constructor-arg value="Hyderabad"/>
+		<constructor-arg value="25000"/>
+	</bean>
+	<bean id="Seeker2" class="com.bean2.JobSeeker">
+		<constructor-arg  value="2"/>
+		<constructor-arg value="Bank Manager"/>
+		<constructor-arg value="Banglore"/>
+		<constructor-arg value="30000"/>
+	</bean>
+	<bean id="Seeker3" class="com.bean2.JobSeeker">
+		<constructor-arg value="3"/>
+		<constructor-arg value="Sub-Inspector"/>
+		<constructor-arg value="chennai"/>
+		<constructor-arg value="35000"/>
+	</bean>
+	<bean id="jobseekerbean" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="Seeker1"/>
+				<ref bean="Seeker2"/>
+				<ref bean="Seeker3"/>
+			</list>
+		</constructor-arg>
+	</bean>
+	</beans>

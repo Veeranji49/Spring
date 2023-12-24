@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id ="student-1:" class="com.bean3.Student">
+		<constructor-arg value="101"/>
+		<constructor-arg value="anji"/>
+		<constructor-arg value="5000"/>
+		<constructor-arg value="true"/>
+	</bean>
+	<bean id="student-2:" class="com.bean3.Student">
+		<constructor-arg value="102"/>
+		<constructor-arg value="veeru"/>
+		<constructor-arg value="5200"/>
+		<constructor-arg value="true"/>
+	</bean>
+	<bean id="studentbean" class="java.util.ArrayList">
+		<constructor-arg>
+		
+		<list>
+			<ref bean ="student-1:"/>
+			<ref bean="student-2:"/>
+		</list>
+		</constructor-arg>
+	</bean>
+	</beans>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="person1" class="com.bean.Person">
+		<constructor-arg value="1"/>
+		<constructor-arg value="anji"/>
+		<constructor-arg  value="25000"/>
+	</bean>
+	<bean id="person2" class="com.bean.Person">
+		<constructor-arg  value="2"/>
+		<constructor-arg value="veeru"/>
+		<constructor-arg value="30000"/>
+	</bean>
+	<bean id="person3" class="com.bean.Person">
+		<constructor-arg value="3"/>
+		<constructor-arg value="laxman"/>
+		<constructor-arg value="35000"/>
+	</bean>
+	<bean id="person4" class="com.bean.Person">
+		<constructor-arg value="4"/>
+		<constructor-arg  value="veeresh"/>
+		<constructor-arg value="40000"/>
+	</bean>
+	<bean id="personsList" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="person1"/>
+				<ref bean="person2"/>
+				<ref bean="person3"/>
+				<ref bean="person4"/>
+			</list>
+		
+		</constructor-arg>
+	
+	</bean>
+	</beans>
